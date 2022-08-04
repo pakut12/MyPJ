@@ -23,7 +23,7 @@
                 <tbody>
                     <%
             String[] list;
-            File f = new File("C:/Users/pakutsing/Desktop/WebApplication1/build/web/upload");
+            File f = new File("C:/Users/pakutsing/Desktop/Github/WebApplication1/build/web/upload");
             list = f.list();
             int n = 0;
             for (String arr : list) {

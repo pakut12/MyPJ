@@ -64,7 +64,7 @@ public class SVupload extends HttpServlet {
                     int endPos = ((file.substring(0, boundaryLocation)).getBytes()).length;
                     // creating a new file with the same name and writing the content in new file
 
-                    String savePath = "C:/Users/pakutsing/Desktop/WebApplication1/build/web/upload/" + saveFile;
+                    String savePath = "C:/Users/pakutsing/Desktop/Github/WebApplication1/build/web/upload/" + saveFile;
 
                     out.println("Upload file Successfully.<br>");
 

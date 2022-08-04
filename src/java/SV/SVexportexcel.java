@@ -37,7 +37,7 @@ public class SVexportexcel extends HttpServlet {
                 ArrayList<String> user = DB.ConnDB.getsqldata(sql, "user");
                 ArrayList<String> pass = DB.ConnDB.getsqldata(sql, "pass");
 
-                String fileName = "C:/Users/pakutsing/Desktop/WebApplication1/build/web/Export/ExportExcelToLocal.xls";
+                String fileName = "C:/Users/pakutsing/Desktop/Github/WebApplication1/build/web/Export/ExportExcelToLocal.xls";
 
                 WritableWorkbook workbook = Workbook.createWorkbook(new File(fileName));
 
