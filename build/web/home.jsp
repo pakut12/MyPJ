@@ -13,14 +13,10 @@
         <%@include file="nav/head.jsp"%> 
     </head>
     <body>
-        <%
-            String name = (String) request.getAttribute("user");
-            session.setAttribute("name", name);
-        %>
-        
+       
         
         <%@include file="nav/nav.jsp" %>
-        <br><br><br><br>
+        
         <div class="container">
             <div class="row">
                 <div class="col-3"> 
@@ -31,20 +27,32 @@
                         <div class="card-body text-center">
                             <p>รูปโปรไฟล์</p>
                             <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="img-thumbnail w-50 h-50 mb-3" >
-                            <p>User : <%= session.getAttribute("name")%></p>
+                            <p>User : <%= session.getAttribute("user") %></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-9">
                     <div id="pageview">
-                        
+                        <div class="card shadow ">
+                            <div class="card-header">
+                                Home
+                            </div>
+                            <div class="card-body">
+                                Welcome
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             
         </div>
-        
+        <script>
+            $(document).ready(function (){
+                $("#page1").addClass("active");
+            });
+
+        </script>
         <%@ include file="nav/footer.jsp" %>
-        <script src="js/main.js"></script>
+        
     </body>
 </html>

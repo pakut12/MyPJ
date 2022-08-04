@@ -14,6 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.*;
 import javax.servlet.http.*;
+import oracle.net.ns.SessionAtts;
 
 /**
  *
@@ -44,12 +45,10 @@ public class SVlogin extends HttpServlet {
                     page = "/index.jsp";
                     status = "N";
                 } else {
-                    while (n < arr.size()) {
-                        String a = arr.get(n);
-                        out.print(a);
-                        request.setAttribute("user", arr.get(n));
-                        n++;
-                    }
+                    HttpSession session = request.getSession();
+                    session.setAttribute("user", arr.get(0));
+                    
+                    
                     status = "Y";
                     page = "/home.jsp";
                 }

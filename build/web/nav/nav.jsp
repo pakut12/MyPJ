@@ -15,19 +15,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" id="page1">Home</a>
+                    <a class="nav-link " aria-current="page" href="home.jsp" id="page1">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="page2">Table</a>
+                    <a class="nav-link" href="page2.jsp" id="page2">Table</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="page3">Upload Excel</a>
+                    <a class="nav-link" href="page3.jsp" id="page3">Upload Excel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="page4">Read Excel</a>
+                    <a class="nav-link" href="page4.jsp" id="page4">Read Excel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="page5">Write Excel</a>
+                    <a class="nav-link" href="page5.jsp" id="page5">Write Excel</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdown">
@@ -35,7 +35,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="#" id="page6">
                                 Create pdf
                             </a>
                         </li>
@@ -46,7 +46,7 @@
                         </li>
                         <li><hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#" >Something else here</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -60,4 +60,4 @@
         </div>
     </div>
 </nav>
-
+ <br><br><br><br>
