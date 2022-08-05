@@ -76,8 +76,8 @@ public class ConnDB {
     }
 
     public static String getpathExport() {
-        String pathwork = "C:/Users/pakutsing/Desktop/Github/MyPJ/web/font/";
-        String pathhome = "C:/Users/Gus/Desktop/Github/MyPJ/web/font/";
+        String pathwork = "C:/Users/pakutsing/Desktop/Github/MyPJ/web/Export/";
+        String pathhome = "C:/Users/Gus/Desktop/Github/MyPJ/web/Export/";
         return pathhome.toString();
     }
     
