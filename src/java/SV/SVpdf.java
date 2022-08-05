@@ -44,7 +44,7 @@ public class SVpdf extends HttpServlet {
 
                 //Create OutputStream instance.
                 OutputStream outputStream =
-                        new FileOutputStream(new File("C:/Users/pakutsing/Desktop/Github/MyPJ/web/Export/TestTableFile.pdf"));
+                        new FileOutputStream(new File(DB.ConnDB.getpathExport() + "TestTableFile.pdf"));
 
                 //Create PDFWriter instance.
                 PdfWriter.getInstance(document, outputStream);
@@ -52,10 +52,10 @@ public class SVpdf extends HttpServlet {
                 //Open the document.
                 document.open();
 
-                Font font = new Font(BaseFont.createFont("C:/Users/pakutsing/Desktop/Github/MyPJ/web/font/THSarabunNew.ttf",
+                Font font = new Font(BaseFont.createFont(DB.ConnDB.getpathfont() + "THSarabunNew.ttf",
                         BaseFont.IDENTITY_H, BaseFont.EMBEDDED));
                 font.setSize(16);
-                Font font1 = new Font(BaseFont.createFont("C:/Users/pakutsing/Desktop/Github/MyPJ/web/font/THSarabunNew Bold.ttf",
+                Font font1 = new Font(BaseFont.createFont(DB.ConnDB.getpathfont() + "THSarabunNew Bold.ttf",
                         BaseFont.IDENTITY_H, BaseFont.EMBEDDED));
                 font1.setSize(26);
 
@@ -68,7 +68,7 @@ public class SVpdf extends HttpServlet {
 
                 Paragraph d = new Paragraph("วันที่ : ", font);
                 d.setAlignment(Element.ALIGN_RIGHT);
-                
+
                 document.add(d);
                 document.add(new Paragraph("\n"));
 

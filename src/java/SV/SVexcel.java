@@ -29,7 +29,7 @@ public class SVexcel extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
             String w = request.getParameter("path");
-            String Pathfolder = "C:/Users/pakutsing/Desktop/Github/WebApplication1/build/web/upload/" + w;
+            String Pathfolder = DB.ConnDB.getpathupload() + w;
             String x = null;
 
             try {

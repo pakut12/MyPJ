@@ -20,7 +20,7 @@ public class ConnDB {
 //            Class.forName("oracle.jdbc.driver.OracleDriver");
 //            con = DriverManager.getConnection("jdbc:oracle:thin:@10.0.62.18:1521:stock", "comp", "pmoc4");
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:4306/test" +
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test" +
                     "?user=root&password=");
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,6 +61,26 @@ public class ConnDB {
         } catch (Exception e) {
             return false;
         }
-
     }
+
+    public static String getpathupload() {
+        String pathwork = "C:/Users/pakutsing/Desktop/Github/MyPJ/web/upload/";
+        String pathhome = "C:/Users/Gus/Desktop/Github/MyPJ/web/upload/";
+        return pathhome.toString();
+    }
+
+    public static String getpathfont() {
+        String pathwork = "C:/Users/pakutsing/Desktop/Github/MyPJ/web/font/";
+        String pathhome = "C:/Users/Gus/Desktop/Github/MyPJ/web/font/";
+        return pathhome.toString();
+    }
+
+    public static String getpathExport() {
+        String pathwork = "C:/Users/pakutsing/Desktop/Github/MyPJ/web/font/";
+        String pathhome = "C:/Users/Gus/Desktop/Github/MyPJ/web/font/";
+        return pathhome.toString();
+    }
+    
+    
+    
 }

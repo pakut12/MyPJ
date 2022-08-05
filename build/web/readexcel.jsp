@@ -50,7 +50,8 @@
                                         <tbody>
                                             <%
             String[] list;
-            File f = new File("C:/Users/pakutsing/Desktop/Github/MyPJ/web/upload/");
+            
+            File f = new File(DB.ConnDB.getpathupload());
             list = f.list();
             int n = 0;
             for (String arr : list) {
