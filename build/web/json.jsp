@@ -38,10 +38,20 @@
                                 Home
                             </div>
                             <div class="card-body">
-                                <%
-            String json = (String) request.getAttribute("json");
-                                %>
-                                <p class="h1"><%=json%></p>
+                                <table class="table table-sm " id="mytable">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>User</th>
+                                            <th>Pass</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                    
+                                </table>                                
                             </div>
                         </div>
                     </div>
@@ -52,6 +62,11 @@
         <script>
             $(document).ready(function (){
                 $("#dropdown").addClass("active");
+                $("#mytable").DataTable({
+                    processing: true,
+                    serverSide: true,
+                    ajax: "${pageContext.request.contextPath}/json"
+                });
             });
         </script>
         <%@ include file="nav/footer.jsp" %>

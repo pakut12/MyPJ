@@ -62,7 +62,7 @@ public class SVexportexcel extends HttpServlet {
                 workbook.close();
 
                 out.println("Excel file created.");
-
+                out.println(fileName);
             } catch (Exception e) {
                 e.printStackTrace();
                 out.print(e);

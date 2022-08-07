@@ -51,9 +51,10 @@ public class ConnDB {
         return (ArrayList) arr;
     }
 
+    
+
     public static boolean getsql(String sql) throws SQLException {
         Statement s = null;
-
         try {
             s = ConnDB.getConnDB().createStatement();
             s.execute(sql);
@@ -61,6 +62,7 @@ public class ConnDB {
         } catch (Exception e) {
             return false;
         }
+
     }
 
     public static String getpathupload() {
@@ -80,7 +82,4 @@ public class ConnDB {
         String pathhome = "C:/Users/Gus/Desktop/Github/MyPJ/web/Export/";
         return pathhome.toString();
     }
-    
-    
-    
 }
